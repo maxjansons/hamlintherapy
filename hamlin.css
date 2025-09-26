@@ -50,6 +50,7 @@ body {
     border-bottom-left-radius: 25px; */
     border-radius: 25px;
     position: relative;
+    /* display: none; */
     
 
 }
@@ -150,7 +151,8 @@ body {
 .main-container .content .item {
     background: #e3f2f1;
     padding: 50px;
-    margin-bottom: 25px; 
+    margin-bottom: 25px;
+    text-align: center;
 
 }
 
