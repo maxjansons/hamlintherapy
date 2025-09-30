@@ -205,6 +205,10 @@ h3 {
     
 }
 
+.topics {
+    list-style: none;
+}
+
 @media (max-width: 999px) {
 
     .main-container .top-bar {
