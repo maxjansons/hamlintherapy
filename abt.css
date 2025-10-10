@@ -195,6 +195,16 @@ h3 {
     border-radius: 25px;
 }
 
+.placeholder {
+    margin: 45px 45px 45px 0px;
+    float: left;
+}
+
+.placeholder img {
+    height: 550px;
+    border-radius: 25px;
+}
+
 .footer {
     position: relative;
     max-width: 1250px;
