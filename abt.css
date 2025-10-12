@@ -21,6 +21,10 @@ body {
     font-family: 'Libre Baskerville', serif;
 }
 
+.header a {
+    color: black;
+}
+
 
 .wrapper {
     margin: 0 10px;
@@ -114,9 +118,7 @@ body {
 
 } */
 
-.main-container {
-    margin: 0px 350px 0px 150px;
-}
+
 
 .main-container .top-bar {
     height: 60px;
@@ -159,9 +161,14 @@ body {
 .content {
     /* background: #e3f2f1; */
     margin: 25px;
+      display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+           header  ;
 }
 
-.main-container .content .text1 {
+.main-container .content .name {
     /* background: #e3f2f1; */
     padding-top: 50px;
     padding-left: 50px;
@@ -181,28 +188,37 @@ body {
 }
 
 h3 {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 
 .profile-pic {
-    margin: 45px;
-    float: right;
+    grid-area: 
+
 }
 
 .profile-pic img {
-    height: 550px;
+    height: auto;
+    max-height: 550px;
+    width: 100%;
     border-radius: 25px;
+    
 }
 
 .placeholder {
     margin: 45px 45px 45px 0px;
-    float: left;
+    
 }
 
 .placeholder img {
-    height: 550px;
+    height: auto;
+    max-height: 550px;
     border-radius: 25px;
+}
+
+.name {
+    grid-column-start: 2;
+    
 }
 
 .footer {
@@ -292,11 +308,11 @@ h3 {
 
 }
 
-@media (max-width: 1128px) {
-    .content {
+@media (max-width: 1309px) {
+    /* .content {
         display: flex;
         flex-direction: column;
-    }
+    } */
 
     .text1 {
         order: 1;
@@ -307,14 +323,14 @@ h3 {
 
     .profile-pic {
         order: 2;
-        align-self: center;
+        float: right;
         padding: 0;
         margin-left: 50px;
         margin-right: 50px;
     }
 
-.profile-pic img {
-    height: 800px;
+.profile-pic img, .placeholder img {
+    max-height: 400px;
 }
 
     .bio {
@@ -323,3 +339,24 @@ h3 {
     }
 }
 
+@media (max-width: 1198px) {
+    .profile-pic img, .placeholder img {
+        max-height: 350px;
+        /* margin-bottom: 20px; */
+    }
+
+    .placeholder {
+        margin-bottom: 300px;
+    }
+}
+
+@media (max-width: 1051px) {
+    .profile-pic img, .placeholder img {
+        max-height: 300px;
+        /* margin-bottom: 20px; */
+    }
+
+     .placeholder {
+        margin-bottom: 300px;
+    }
+}
