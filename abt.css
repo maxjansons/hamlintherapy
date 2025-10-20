@@ -406,3 +406,9 @@ h3 {
         padding: 0px 50px 0px 50px;
     }
 }
+
+@media (max-width: 465px) {
+    .header h1 {
+        font-size: 30pt;
+    }
+}
